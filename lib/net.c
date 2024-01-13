@@ -179,7 +179,7 @@ int xrecvwait(int fd, char *buf, int len, union socksaddr *sa, int timeout)
 char *escape_url(char *str, char *and)
 {
   int i, j , count;
-  char *ret QUIET, *ss QUIET;
+  char *ret, *ss;
 
   for (j = count = 0;;) {
     for (i = 0;;) {
