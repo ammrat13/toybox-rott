@@ -1223,7 +1223,7 @@ static void subshell_callback(char **argv)
 static char *pl2str(struct sh_pipeline *pl, int one)
 {
   struct sh_pipeline *end = 0, *pp;
-  int len QUIET, i;
+  int len, i;
   char *ss;
 
   // Find end of block (or one argument)

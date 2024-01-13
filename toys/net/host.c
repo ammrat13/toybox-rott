@@ -73,7 +73,7 @@ static void get_nsname(char **pline, long len)
 void host_main(void)
 {
   int verbose = FLAG(a)||FLAG(v), type, abuf_len = 65536, //Largest TCP response
-      i, j, sec, rcode, qlen, alen QUIET, pllen = 0, t2len = 2048;
+      i, j, sec, rcode, qlen, alen, pllen = 0, t2len = 2048;
   unsigned count, ttl;
   char *abuf = xmalloc(abuf_len), *name = *toys.optargs, *p, *ss,
        *t2 = toybuf+t2len;

@@ -58,7 +58,7 @@ void switch_root_main(void)
   char *newroot = *toys.optargs, **cmdline = toys.optargs+1;
   struct stat st;
   struct statfs stfs;
-  int ii, console QUIET;
+  int ii, console;
 
   // Must be root on a ramfs or tmpfs instance
   if (getpid() != 1) error_exit("not pid 1");

@@ -32,7 +32,7 @@ GLOBALS(
 
 void env_main(void)
 {
-  char **ev = toys.optargs, **ee = 0, **set QUIET, *path = getenv("PATH");
+  char **ev = toys.optargs, **ee = 0, **set, *path = getenv("PATH");
   struct string_list *sl = 0;
   struct arg_list *u;
 
